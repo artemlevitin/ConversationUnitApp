@@ -49,10 +49,10 @@ import java.util.Formatter;
      }
 
 
-     public void safeResltToFile() {
+     public void safeResltToFile(String filePath) {
 
          try {
-             PrintWriter fileWrt = new PrintWriter("CoversResult.txt", "UTF-8");
+             PrintWriter fileWrt = new PrintWriter(filePath, "UTF-8");
              for (String resLn : resultLst) {
                  if (resLn == null)
                      resLn = "No conversion is possible";
